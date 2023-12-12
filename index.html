@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="weatherbox">
+      <h1 class="weatherapph1">Weather App</h1>
+      <label for="city" class="cityname">Enter City Name: </label>
+      <input
+        type="search"
+        id="city"
+        placeholder="Enter Any City Name"
+        required
+      />
+      <button type="submit" id="btnuse" onclick="getUserData()">Weather</button>
+      <!-- <button type="submit" onclick="update()">Update</button> -->
+    </div>
+
+    <div id="weather_info"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- <p class="fullsize">${"City :" + user.name}</p>
+    <p class="fullsize">${"Country :" + user.sys.country}</p>
+    <p class="fullsize">${"Temperature :" + user.main.temp}</p>
+    <p class="fullsize">${"Climate :" + user.weather[0].main}</p>
+    <p class="fullsize">${"Description :" + user.weather[0].description}</p> -->
